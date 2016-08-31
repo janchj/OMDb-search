@@ -1,9 +1,9 @@
-# Guardian Search
+# OMDb Search
 
-Search engine for news articles from the [API of The Guardian newspaper](http://open-platform.theguardian.com/documentation/).
+Search engine for movies from the [API of OMDb](http://www.omdbapi.com/).
 
-Single page application that retrieves all articles that match provided keywords.
-Results are paginated showing 5 results/page, displaying article's title, summary, section and a hyperlink to view more details.
+Single page application that retrieves all movies that match provided keywords.
+Results (movies) are presented with the title, year, genre, a poster, and a hyperlink to view more details.
 
 ## Prerequisites
 
