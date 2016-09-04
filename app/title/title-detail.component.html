@@ -1,0 +1,75 @@
+<div *ngIf="title">
+  <h2>{{title.Title}} ({{ title.Year }})</h2>
+
+  <div class="row">
+    <div class="col-xs-4">
+      <label>Poster: </label>
+    </div>
+    <div class="col-xs-8">
+      <img class="result-poster" src="{{ title.Poster }}" onError="this.src='/images/no-image.jpg';" alt="title-poster" />
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-4">
+      <label>Genre: </label>
+    </div>
+    <div class="col-xs-8">
+      <span>{{ title.Genre }} </span>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-4">
+      <label>Runtime: </label>
+    </div>
+    <div class="col-xs-8">
+      <span>{{ title.Runtime }} </span>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-4">
+      <label>Director(s): </label>
+    </div>
+    <div class="col-xs-8">
+      <span>{{ title.Director }} </span>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-4">
+      <label>Writer(s): </label>
+    </div>
+    <div class="col-xs-8">
+      <span>{{ title.Writer }} </span>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-4">
+      <label>Actor(s): </label>
+    </div>
+    <div class="col-xs-8">
+      <span>{{ title.Actors }} </span>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-4">
+      <label>Plot: </label>
+    </div>
+    <div class="col-xs-8">
+      <span>{{ title.Plot }} </span>
+    </div>
+  </div>
+
+  <br/>
+
+  <div class="row">
+    <div class="col-xs-12">
+      <button (click)="goBack()">Back</button>
+    </div>
+  </div>
+
+</div>
