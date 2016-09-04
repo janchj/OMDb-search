@@ -1,14 +1,16 @@
 import { Component } from '@angular/core';
+import { ROUTER_DIRECTIVES } from '@angular/router';
 
-import { SearchComponent, SearchService } from './search/index'
+import { TitleSearchComponent } from './title/title-search.component'
+import { TitleSearchService } from './title/title-search.service'
 
 @Component({
     selector: 'my-app',
     template: `
         <div class="container">
-            <app-search></app-search>
+            <router-outlet></router-outlet>
         </div>`,
-    directives: [SearchComponent],
-    providers: [SearchService]
+    directives: [ROUTER_DIRECTIVES],
+    providers: [TitleSearchService]
 })
 export class AppComponent { }
