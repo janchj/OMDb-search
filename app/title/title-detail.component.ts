@@ -21,6 +21,10 @@ export class TitleComponent {
         this._titleSearchService.getResultsById(this.route.snapshot.params['id'])
             .then((result) => {
                 // set datasource
+                if (result.Response == "False") {
+                    console.error('Title not found.');
+                     window.history.back();
+                }
                 this.title = result;
             })
             .catch((err) => {

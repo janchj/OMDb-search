@@ -6,7 +6,7 @@ import { provide } from '@angular/core';
 
 import { TitleSearchService } from './title-search.service';
 
-describe('SearchService', () => {
+describe('TitleSearchService', () => {
 
   beforeEachProviders(() => [
     BaseRequestOptions,
